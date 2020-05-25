@@ -1,5 +1,4 @@
 
-
 import java.util.ArrayList;
 
 /**
@@ -52,7 +51,7 @@ public class Libreria {
         empleados.add(e);
     }
 
-    public void addVenta(Venta v){
+    public void addVenta(Venta v) {
         ventas.add(v);
     }
 
@@ -65,7 +64,12 @@ public class Libreria {
         empleados.remove(e);
     }
 
-    public void delVenta(Venta v){
+    /**
+     * Metodo que elimina una venta del registro del sistema.
+     * 
+     * @param v Venta a eliminar
+     */
+    public void delVenta(Venta v) {
         ventas.remove(v);
     }
 
@@ -83,7 +87,7 @@ public class Libreria {
         return null;
     }
 
-    //GETTERS & SETTERS
+    // GETTERS & SETTERS
     public String getRuc() {
         return ruc;
     }
@@ -137,7 +141,5 @@ public class Libreria {
         return "Libreria [direccion=" + direccion + ", distrito=" + distrito + ", empleados=" + empleados + ", nombre="
                 + nombre + ", region=" + region + ", ruc=" + ruc + ", telefono=" + telefono + "]";
     }
-
-    
 
 }
