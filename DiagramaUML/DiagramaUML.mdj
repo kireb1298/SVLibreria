@@ -751,7 +751,7 @@
 											"top": 287,
 											"width": 148.19976806640625,
 											"height": 14,
-											"text": "-idVenta: int",
+											"text": "-codigo: String",
 											"horizontalAlignment": 0
 										},
 										{
@@ -846,23 +846,6 @@
 										},
 										{
 											"_type": "UMLAttributeView",
-											"_id": "AAAAAAFyEd83wZ+99fg=",
-											"_parent": {
-												"$ref": "AAAAAAFyEdApb59gn6s="
-											},
-											"model": {
-												"$ref": "AAAAAAFyEd83iZ+64No="
-											},
-											"font": "Source Sans Pro;14;0",
-											"left": 909,
-											"top": 303,
-											"width": 148.19976806640625,
-											"height": 14,
-											"text": "-cantidad: int",
-											"horizontalAlignment": 0
-										},
-										{
-											"_type": "UMLAttributeView",
 											"_id": "AAAAAAFyEeExOp/Gb6o=",
 											"_parent": {
 												"$ref": "AAAAAAFyEdApb59gn6s="
@@ -890,7 +873,7 @@
 											},
 											"font": "Source Sans Pro;14;0",
 											"left": 909,
-											"top": 319,
+											"top": 303,
 											"width": 148.19976806640625,
 											"height": 14,
 											"text": "-subTotal: double",
@@ -907,7 +890,7 @@
 											},
 											"font": "Source Sans Pro;14;0",
 											"left": 909,
-											"top": 335,
+											"top": 319,
 											"width": 148.19976806640625,
 											"height": 14,
 											"text": "-descuento: double",
@@ -924,7 +907,7 @@
 											},
 											"font": "Source Sans Pro;14;0",
 											"left": 909,
-											"top": 351,
+											"top": 335,
 											"width": 148.19976806640625,
 											"height": 14,
 											"text": "-igv: double",
@@ -941,7 +924,7 @@
 											},
 											"font": "Source Sans Pro;14;0",
 											"left": 909,
-											"top": 367,
+											"top": 351,
 											"width": 148.19976806640625,
 											"height": 14,
 											"text": "-impuesto: double",
@@ -958,7 +941,7 @@
 											},
 											"font": "Source Sans Pro;14;0",
 											"left": 909,
-											"top": 383,
+											"top": 367,
 											"width": 148.19976806640625,
 											"height": 14,
 											"text": "-total: double",
@@ -975,7 +958,7 @@
 											},
 											"font": "Source Sans Pro;14;0",
 											"left": 909,
-											"top": 399,
+											"top": 383,
 											"width": 148.19976806640625,
 											"height": 14,
 											"underline": true,
@@ -987,7 +970,7 @@
 									"left": 904,
 									"top": 282,
 									"width": 158.19976806640625,
-									"height": 136
+									"height": 120
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -1010,7 +993,7 @@
 											},
 											"font": "Source Sans Pro;14;0",
 											"left": 909,
-											"top": 423,
+											"top": 407,
 											"width": 148.19976806640625,
 											"height": 14,
 											"text": "-generarCodigo(): String",
@@ -1019,7 +1002,7 @@
 									],
 									"font": "Source Sans Pro;14;0",
 									"left": 904,
-									"top": 418,
+									"top": 402,
 									"width": 158.19976806640625,
 									"height": 24
 								},
@@ -9155,9 +9138,9 @@
 							"_parent": {
 								"$ref": "AAAAAAFyEdApbp9YEyE="
 							},
-							"name": "idVenta",
+							"name": "codigo",
 							"visibility": "private",
-							"type": "int"
+							"type": "String"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -9210,16 +9193,6 @@
 							"name": "direccion",
 							"visibility": "private",
 							"type": "String"
-						},
-						{
-							"_type": "UMLAttribute",
-							"_id": "AAAAAAFyEd83iZ+64No=",
-							"_parent": {
-								"$ref": "AAAAAAFyEdApbp9YEyE="
-							},
-							"name": "cantidad",
-							"visibility": "private",
-							"type": "int"
 						},
 						{
 							"_type": "UMLAttribute",
