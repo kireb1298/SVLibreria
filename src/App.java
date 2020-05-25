@@ -6,7 +6,7 @@
 
 /**
  *
- * @author Milton
+ * @author Milton Mariños
  */
 public class App {
 

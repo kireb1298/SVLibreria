@@ -1,12 +1,10 @@
-
-
 import java.sql.Date;
 
 /**
  * Clase que define las Ofertas que se aplican unicamente a las Categorias
  * registradas en el inventario.
  *
- * @author Milton
+ * @author Milton Mariños
  */
 public class Oferta {
 

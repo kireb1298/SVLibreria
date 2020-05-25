@@ -1,5 +1,6 @@
-
-
+/**
+ *@author Milton Mariños 
+ */
 public class Categoria {
     private String codigo;
     private String nombre;

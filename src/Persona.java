@@ -1,5 +1,6 @@
-
-
+/**
+ * @author Milton Mariños
+ */
 public class Persona {
 
     private String dni;
