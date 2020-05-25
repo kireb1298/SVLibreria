@@ -1,6 +1,6 @@
 /**
- * Clase que define los objetos de tipo Venta, la venta es realizada por
- * empleado y registrado el sistema de la libreria
+ * Clase que define los objetos de tipo Venta. La venta es realizada por
+ * un empleado y la referencia es guardada en la clase Libreria.
  * 
  * @author Milton Mariños
  */
@@ -14,7 +14,7 @@ public class Venta {
 
     Empleado empleado;
     Cliente cliente;
-    
+
     private String generarCodigo() {
         contador++;
         codigo = "VE000000";
