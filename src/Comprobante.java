@@ -1,6 +1,3 @@
-
-
-
 /**
  * Clase que define al comprobante de pago.
  *

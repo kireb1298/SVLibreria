@@ -1,5 +1,3 @@
-
-
 /**
  * Clase que define el tipo de comprobante de pago Factura
  * 

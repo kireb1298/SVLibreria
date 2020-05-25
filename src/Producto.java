@@ -1,5 +1,3 @@
-
-
 /**
  * Esta clase define a los objetos de tipo Producto
  * 
