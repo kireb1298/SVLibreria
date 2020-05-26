@@ -49,11 +49,12 @@ public class Producto {
      * 
      * @return Codigo del producto
      */
-    private String generarCodigo() {
+    public static String generarCodigo() {
         contador++;
-        codigo = "PR000000";
+        String codigo = "PR000000";
         return codigo.substring(0, 8 - String.valueOf(contador).length()) + contador;
     }
+
 
     // Getters & Setters
     public String getCodigo() {

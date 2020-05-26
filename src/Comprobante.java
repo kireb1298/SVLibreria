@@ -9,22 +9,30 @@ import java.util.Date;
  */
 public class Comprobante {
     // Atributos
-    private String codigo;
     private Date fecha;
-    private String moneda;
+    private static String MONEDA = "SOLES";
+
     /**
      * Constructor de la clase comprobante con todos los atributos.
      * 
-     * @param codigo
      * @param fecha
-     * @param moneda
      */
-    public Comprobante(String codigo, Date fecha, String moneda) {
-        this.codigo = codigo;
+    public Comprobante( Date fecha) {
         this.fecha = fecha;
-        this.moneda = moneda;
     }
 
-    
-    
+
+    public Date getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
+    }
+
+    public static String getMONEDA() {
+        return MONEDA;
+    }
+
+
 }
