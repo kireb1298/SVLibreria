@@ -13,7 +13,7 @@ public class Pedido {
         this.cantidad = cantidad;
     }
 
-    public double montoTotal(){
+    public double monto(){
         if(cantidad > producto.getCantPrecioXM())
             return producto.getPrecioXM() * cantidad;
         return producto.getPrecioXU() * cantidad;
