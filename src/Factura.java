@@ -5,5 +5,5 @@
  * @author Milton Mariños
  */
 public class Factura extends Comprobante {
-
+    
 }
