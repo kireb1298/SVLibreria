@@ -5,8 +5,10 @@
  * @author Milton Mariños
  */
 public class Pedido {
-    Producto producto;
     int cantidad;
+    
+    Producto producto;
+    Cliente cliente;
 
     public Pedido(Producto producto, int cantidad) {
         this.producto = producto;

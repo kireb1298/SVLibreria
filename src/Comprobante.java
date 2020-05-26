@@ -17,10 +17,9 @@ public class Comprobante {
      * 
      * @param fecha
      */
-    public Comprobante( Date fecha) {
+    public Comprobante(Date fecha) {
         this.fecha = fecha;
     }
-
 
     public Date getFecha() {
         return fecha;
@@ -33,6 +32,5 @@ public class Comprobante {
     public static String getMONEDA() {
         return MONEDA;
     }
-
 
 }

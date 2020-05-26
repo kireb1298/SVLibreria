@@ -39,7 +39,9 @@ public class Empleado extends Persona {
     }
 
 
-    public void realizarVenta(){
+    public void realizarVenta(String dni, String nombre, String apellido, String direccion){
+        Cliente c = new Cliente(dni, nombre, apellido, direccion);
+        c.realizarPedido();
         Venta v = new Venta();
         libreria.addVenta(v);
     }

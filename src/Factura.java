@@ -22,7 +22,7 @@ public class Factura extends Comprobante {
     
     public String generarCodigo() {
         contador++;
-        codigo = "FA000000";
+        codigo = "CFA000000";
         return codigo.substring(0, 8 - String.valueOf(contador).length()) + contador;
     }
 
