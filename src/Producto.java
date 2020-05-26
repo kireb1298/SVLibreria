@@ -14,42 +14,33 @@ public class Producto {
     private int stockMin; // Stock minimo
     private double precioXU; // Precio por unidad
     private double precioXM; // Precio al por mayor
+    private double cantPrecioXM; // Cantidad minima que se requiere para acceder al precio de por mayor
     private static int contador;
 
     /**
-     * Constructor basico del producto
+     * Constructor de la clase que contiene todos los atributos
      * 
      * @param nombre
      * @param descripcion
      * @param marca
+     * @param stock
+     * @param stockMin     Stock minimo
+     * @param precioXU     Precio por unidad
+     * @param precioXM     precio de la unidad al por mayor
+     * @param cantPrecioXM Cantidad minima que se requiere para acceder al precio de
+     *                     por mayor
      */
-    public Producto(String nombre, String descripcion, String marca) {
-        this.codigo = generarCodigo();
+    public Producto(String nombre, String descripcion, String marca, int stock, int stockMin, double precioXU,
+            double precioXM, double cantPrecioXM) {
+        this.codigo = getCodigo();
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.marca = marca;
-    }
-
-    /**
-     * Constructor completo del producto.
-     * 
-     * @param nombre
-     * @param descripcion
-     * @param marca
-     * @param stock       Cantidad de unidades del producto.
-     * @param stockMin    Cantidad minima de unidades del producto en el almacen.
-     * @param precioXU    Precio por unidad.
-     * @param precioXM    Precio al por mayor.
-     */
-    public Producto(String nombre, String descripcion, String marca, int stock, int stockMin, double precioXU,
-            double precioXM) {
-        this.codigo = generarCodigo();
-        this.nombre = nombre;
-        this.descripcion = descripcion;
         this.stock = stock;
         this.stockMin = stockMin;
         this.precioXU = precioXU;
         this.precioXM = precioXM;
+        this.cantPrecioXM = cantPrecioXM;
     }
 
     /**
@@ -64,7 +55,75 @@ public class Producto {
         return codigo.substring(0, 8 - String.valueOf(contador).length()) + contador;
     }
 
+    // Getters & Setters
     public String getCodigo() {
         return codigo;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public int getStock() {
+        return stock;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
+    }
+
+    public int getStockMin() {
+        return stockMin;
+    }
+
+    public void setStockMin(int stockMin) {
+        this.stockMin = stockMin;
+    }
+
+    public double getPrecioXU() {
+        return precioXU;
+    }
+
+    public void setPrecioXU(double precioXU) {
+        this.precioXU = precioXU;
+    }
+
+    public double getPrecioXM() {
+        return precioXM;
+    }
+
+    public void setPrecioXM(double precioXM) {
+        this.precioXM = precioXM;
+    }
+
+    public double getCantPrecioXM() {
+        return cantPrecioXM;
+    }
+
+    public void setCantPrecioXM(double cantPrecioXM) {
+        this.cantPrecioXM = cantPrecioXM;
+    }
+
+    
+
 }

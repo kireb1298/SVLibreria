@@ -5,6 +5,18 @@
  * @author Milton Mariños
  */
 public class Pedido {
-    
+    Producto producto;
+    int cantidad;
+
+    public Pedido(Producto producto, int cantidad) {
+        this.producto = producto;
+        this.cantidad = cantidad;
+    }
+
+    public double monto(){
+        if(cantidad > producto.getCantPrecioXM())
+            return producto.getPrecioXM() * cantidad;
+        return producto.getPrecioXU() * cantidad;
+    }
 
 }

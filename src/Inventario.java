@@ -27,8 +27,8 @@ public class Inventario {
      * @param precioXM    Precio al por mayor.
      */
     public void registrarProducto(String nombre, String descripcion, String marca, int stock, int stockMin,
-            double precioXU, double precioXM) {
-        Producto p = new Producto(nombre, descripcion, marca, stock, stockMin, precioXU, precioXM);
+            double precioXU, double precioXM, int cantPrecioXM) {
+        Producto p = new Producto(nombre, descripcion, marca, stock, stockMin, precioXU, precioXM, cantPrecioXM);
         productos.add(p);
     }
 
