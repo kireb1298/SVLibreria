@@ -13,8 +13,8 @@ public class Factura extends Comprobante {
     private String razonSocial;
     private int contador;
 
-    public Factura(Date fecha, String ruc, String razonSocial) {
-        super(fecha);
+    public Factura(String ruc, String razonSocial) {
+        super();
         this.codigo = generarCodigo();
         this.ruc = ruc;
         this.razonSocial = razonSocial;

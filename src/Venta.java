@@ -18,11 +18,9 @@ public class Venta {
     Cliente cliente;
     ArrayList<Pedido> pedidos = new ArrayList<Pedido>();
 
-    public Venta( double impuesto, double total) {
+    public Venta(Cliente cliente) {
         this.codigo = generarCodigo();
         this.subTotal = calcSubTotal();
-        this.impuesto = impuesto;
-        this.total = total;
     }
 
     private String generarCodigo() {

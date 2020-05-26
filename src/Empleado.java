@@ -7,6 +7,7 @@
  */
 public class Empleado extends Persona {
     private String codigo;
+    private String telefono;
     private static int contador;
 
     private Libreria libreria;
@@ -38,21 +39,25 @@ public class Empleado extends Persona {
         return codigo.substring(0, 8 - String.valueOf(contador).length()) + contador;
     }
 
-
-    public void realizarVenta(String dni, String nombre, String apellido, String direccion){
+    public void realizarVenta(String dni, String nombre, String apellido, String direccion, boolean comprobante,
+            String ruc, String razonSocial) {
+        Comprobante cmp;
         Cliente c = new Cliente(dni, nombre, apellido, direccion);
-        c.realizarPedido();
-        Venta v = new Venta();
-        libreria.addVenta(v);
+        Venta v = new Venta(c);
+        if (comprobante)
+            cmp = new Boleta(dni);
+        else
+            cmp = new Factura(ruc, razonSocial);
+        cmp.setVenta(v);
     }
 
-    //GETTERS & SETTERS
+    // GETTERS & SETTERS
     public String getCodigo() {
         return codigo;
     }
 
     public Libreria getLibreria() {
         return libreria;
-    } 
+    }
 
 }

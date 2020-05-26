@@ -12,13 +12,12 @@ public class Comprobante {
     private Date fecha;
     private static String MONEDA = "SOLES";
 
+    private Venta venta;
     /**
      * Constructor de la clase comprobante con todos los atributos.
      * 
-     * @param fecha
      */
-    public Comprobante(Date fecha) {
-        this.fecha = fecha;
+    public Comprobante() {
     }
 
     public Date getFecha() {
@@ -32,5 +31,15 @@ public class Comprobante {
     public static String getMONEDA() {
         return MONEDA;
     }
+
+    public Venta getVenta() {
+        return venta;
+    }
+
+    public void setVenta(Venta venta) {
+        this.venta = venta;
+    }
+
+    
 
 }

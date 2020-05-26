@@ -11,8 +11,8 @@ public class Boleta extends Comprobante {
         private String dni;
         private int contador;
 
-        public Boleta(Date fecha, String dni) {
-                super(fecha);
+        public Boleta(String dni) {
+                super();
                 this.codigo = generarCodigo();
                 this.dni = dni;
         }
