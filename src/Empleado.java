@@ -49,6 +49,7 @@ public class Empleado extends Persona {
         else
             cmp = new Factura(ruc, razonSocial);
         cmp.setVenta(v);
+        libreria.addVenta(v);
     }
 
     // GETTERS & SETTERS
