@@ -11,6 +11,6 @@
  * @author Milton Mariños
  */
 public class Boleta extends Comprobante {
-        String dni;
-        int contador;
+        private String dni;
+        private int contador;
 }
