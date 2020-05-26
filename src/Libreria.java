@@ -11,6 +11,7 @@ public class Libreria {
     private String nombre;
     private String direccion;
     private String region;
+    private String provincia;
     private String distrito;
     private String telefono;
 
@@ -25,14 +26,16 @@ public class Libreria {
      * @param nombre
      * @param direccion
      * @param region
+     * @param provincia
      * @param distrito
      * @param telefono
      */
-    public Libreria(String ruc, String nombre, String direccion, String region, String distrito, String telefono) {
+    public Libreria(String ruc, String nombre, String direccion, String region, String provincia, String distrito, String telefono) {
         this.ruc = ruc;
         this.nombre = nombre;
         this.direccion = direccion;
         this.region = region;
+        this.provincia = provincia;
         this.distrito = distrito;
         this.telefono = telefono;
     }
@@ -50,6 +53,11 @@ public class Libreria {
         empleados.add(e);
     }
 
+    /**
+     * Metodo que registra los datos de una venta en el sistema
+     * 
+     * @param v venta a registrar en el sistema
+     */
     public void addVenta(Venta v) {
         ventas.add(v);
     }
@@ -59,7 +67,7 @@ public class Libreria {
      * 
      * @param e Empleado a eliminar
      */
-    public void delEmpleado(Empleado e) {
+    public void remEmpleado(Empleado e) {
         empleados.remove(e);
     }
 
@@ -68,14 +76,14 @@ public class Libreria {
      * 
      * @param v Venta a eliminar
      */
-    public void delVenta(Venta v) {
+    public void remVenta(Venta v) {
         ventas.remove(v);
     }
 
     /**
      * Metodo que realiza la busqueda de un empleado en base a su codigo
      * 
-     * @param c codigo del Empleado que se desea buscar
+     * @param c dni del empleado que desea buscar
      * @return Si el empleado es encontrado se devuelve la direccion en memoria, en
      *         caso contrario, se devuelve null.
      */
@@ -133,12 +141,6 @@ public class Libreria {
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
-    }
-
-    @Override
-    public String toString() {
-        return "Libreria [direccion=" + direccion + ", distrito=" + distrito + ", empleados=" + empleados + ", nombre="
-                + nombre + ", region=" + region + ", ruc=" + ruc + ", telefono=" + telefono + "]";
     }
 
 }

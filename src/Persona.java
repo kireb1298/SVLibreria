@@ -1,4 +1,6 @@
 /**
+ * Clase que sirve como superclase de Empleado y Cliente
+ * 
  * @author Milton Mariños
  */
 public class Persona {
@@ -23,6 +25,7 @@ public class Persona {
         this.direccion = direccion;
     }
 
+    //Getter and Setters
     public String getDni() {
         return dni;
     }

@@ -1,5 +1,4 @@
 
-
 /**
  * Clase que define a los objetos de tipo Empleado.
  * 
@@ -42,8 +41,9 @@ public class Empleado extends Persona {
 
     public void realizarVenta(){
         Venta v = new Venta();
-        
+        libreria.addVenta(v);
     }
+
     //GETTERS & SETTERS
     public String getCodigo() {
         return codigo;
