@@ -49,4 +49,8 @@ public class Empleado extends Persona {
         return codigo;
     }
 
+    public Libreria getLibreria() {
+        return libreria;
+    } 
+
 }

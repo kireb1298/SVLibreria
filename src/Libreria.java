@@ -143,4 +143,8 @@ public class Libreria {
         this.telefono = telefono;
     }
 
+    public Inventario getInventario() {
+        return inventario;
+    } 
+
 }
