@@ -30,24 +30,25 @@ public class Inventario {
         productos.add(p);
     }
 
-    public void addCategoria() {
+    public void addCategoria(Categoria c) {
+        categorias.add(c);
 
     }
 
-    public void addOferta() {
-
+    public void addOferta(Oferta o) {
+        ofertas.add(o);
     }
 
-    public void remProducto() {
-
+    public void remProducto(Producto p) {
+        productos.add(p);
     }
 
-    public void remCategoria() {
-
+    public void remCategoria(Categoria c) {
+        categorias.remove(c);
     }
 
-    public void remOferta() {
-
+    public void remOferta(Oferta o) {
+        ofertas.remove(o);
     }
 
     /**
