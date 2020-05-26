@@ -20,6 +20,12 @@ public class Factura extends Comprobante {
         this.razonSocial = razonSocial;
     }
     
+    /**
+     * Genera un codigo que sirve como identificador unico del empleado. Esta
+     * formado por las letras 'CFA' + un numero cuyo valor no exede las 6 cifras.
+     * 
+     * @return Codigo de la Factura
+     */
     public String generarCodigo() {
         contador++;
         codigo = "CFA000000";
