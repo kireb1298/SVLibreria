@@ -16,7 +16,6 @@ public class Libreria {
     private String telefono;
 
     private Inventario inventario;
-    private ArrayList<Empleado> empleados = new ArrayList<Empleado>();
     private ArrayList<Venta> ventas = new ArrayList<Venta>();
 
     /**
@@ -30,7 +29,8 @@ public class Libreria {
      * @param distrito
      * @param telefono
      */
-    public Libreria(String ruc, String nombre, String direccion, String region, String provincia, String distrito, String telefono) {
+    public Libreria(String ruc, String nombre, String direccion, String region, String provincia, String distrito,
+            String telefono) {
         this.ruc = ruc;
         this.nombre = nombre;
         this.direccion = direccion;
@@ -38,19 +38,6 @@ public class Libreria {
         this.provincia = provincia;
         this.distrito = distrito;
         this.telefono = telefono;
-    }
-
-    /**
-     * Metodo que registra los datos de un empleado en el sistema.
-     * 
-     * @param dni
-     * @param nombre
-     * @param apellido
-     * @param direccion
-     */
-    public void addEmpleado(String dni, String nombre, String apellido, String direccion) {
-        Empleado e = new Empleado(dni, nombre, apellido, direccion, this);
-        empleados.add(e);
     }
 
     /**
@@ -63,35 +50,12 @@ public class Libreria {
     }
 
     /**
-     * Metodo que elimina a un empleado del sistema.
-     * 
-     * @param e Empleado a eliminar
-     */
-    public void remEmpleado(Empleado e) {
-        empleados.remove(e);
-    }
-
-    /**
      * Metodo que elimina una venta del registro del sistema.
      * 
      * @param v Venta a eliminar
      */
     public void remVenta(Venta v) {
         ventas.remove(v);
-    }
-
-    /**
-     * Metodo que realiza la busqueda de un empleado en base a su codigo
-     * 
-     * @param c dni del empleado que desea buscar
-     * @return Si el empleado es encontrado se devuelve la direccion en memoria, en
-     *         caso contrario, se devuelve null.
-     */
-    public Empleado buscarE(String c) {
-        for (Empleado e : empleados)
-            if (e.getCodigo().equals(c))
-                return e;
-        return null;
     }
 
     // GETTERS & SETTERS
@@ -145,6 +109,6 @@ public class Libreria {
 
     public Inventario getInventario() {
         return inventario;
-    } 
+    }
 
 }
