@@ -14,7 +14,9 @@ public class Libreria {
     private String provincia;
     private String distrito;
     private String telefono;
+    private String email;
 
+    private RegistroEmpleado rEmpleados; 
     private Inventario inventario;
     private ArrayList<Venta> ventas = new ArrayList<Venta>();
 
@@ -110,5 +112,23 @@ public class Libreria {
     public Inventario getInventario() {
         return inventario;
     }
+
+    public String getProvincia() {
+        return provincia;
+    }
+
+    public void setProvincia(String provincia) {
+        this.provincia = provincia;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    
 
 }
