@@ -41,15 +41,7 @@ public class Empleado extends Persona {
 
     public void realizarVenta(String dni, String nombre, String apellido, String direccion, boolean comprobante,
             String ruc, String razonSocial) {
-        Comprobante cmp;
-        Cliente c = new Cliente(dni, nombre, apellido, direccion);
-        Venta v = new Venta(c);
-        if (comprobante)
-            cmp = new Boleta(dni);
-        else
-            cmp = new Factura(ruc, razonSocial);
-        cmp.setVenta(v);
-        libreria.addVenta(v);
+        
     }
 
     // GETTERS & SETTERS

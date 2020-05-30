@@ -8,7 +8,6 @@ public class Pedido {
     int cantidad;
     
     Producto producto;
-    Cliente cliente;
 
     public Pedido(Producto producto, int cantidad) {
         this.producto = producto;
@@ -21,4 +20,13 @@ public class Pedido {
         return producto.getPrecioXU() * cantidad;
     }
 
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
+    }
+
+    
 }

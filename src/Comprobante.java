@@ -5,11 +5,13 @@ import java.util.Date;
  *
  * @author Milton Mariños
  * @author Piero Villarreal
- * @author lopez jose
+ * @author Lopez Jose
  */
 public class Comprobante {
     // Atributos
     private Date fecha;
+    private String nombreCliente;
+    private String apellidoCliente;
     private static String MONEDA = "SOLES";
 
     private Venta venta;

@@ -1,8 +1,7 @@
 import java.util.ArrayList;
 
 /**
- * Clase que define los objetos de tipo Venta. La venta es realizada por un
- * empleado y la referencia es guardada en la clase Libreria.
+ * Clase que define los objetos de tipo Venta
  * 
  * @author Milton Mariños
  */
@@ -15,10 +14,10 @@ public class Venta {
     private static int contador;
 
     Empleado empleado;
-    Cliente cliente;
     ArrayList<Pedido> pedidos = new ArrayList<Pedido>();
+    Comprobante comprobante;
 
-    public Venta(Cliente cliente) {
+    public Venta() {
         this.codigo = generarCodigo();
         this.subTotal = calcSubTotal();
     }
