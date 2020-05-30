@@ -39,7 +39,5 @@ public class Comprobante {
     public void setVenta(Venta venta) {
         this.venta = venta;
     }
-
     
-
 }
