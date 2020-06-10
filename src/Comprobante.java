@@ -7,7 +7,7 @@ import java.util.Date;
  * @author Piero Villarreal
  * @author Lopez Jose
  */
-public class Comprobante {
+public abstract class Comprobante {
     // Atributos
     private Date fecha;
     private String nombreCliente;

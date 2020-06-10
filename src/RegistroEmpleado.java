@@ -9,6 +9,14 @@ public class RegistroEmpleado {
     private HashSet<Empleado> empleados = new HashSet<Empleado>();
 
     /**
+     * Constructor Vacio
+     */
+    
+    public RegistroEmpleado(){
+        
+    }
+    
+    /**
      * Metodo que registra un empleado del sistema.
      * 
      * @param e Empleado a registrar
@@ -40,12 +48,4 @@ public class RegistroEmpleado {
         return null;
     }
 
-    /**
-     * Metodo que retorna el numero de empleados registrados en el sistema.
-     * 
-     * @return Numero de empleados registrados en el sistema
-     */
-    public int size() {
-        return empleados.size();
-    }
 }

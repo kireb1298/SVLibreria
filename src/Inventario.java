@@ -26,28 +26,28 @@ public class Inventario {
      * @param precioXU    Precio por unidad.
      * @param precioXM    Precio al por mayor.
      */
-    public void addProducto(Producto p) {
+    public void addPr(Producto p) {
         productos.add(p);
     }
 
-    public void addCategoria(Categoria c) {
+    public void addCa(Categoria c) {
         categorias.add(c);
 
     }
 
-    public void addOferta(Oferta o) {
+    public void addOf(Oferta o) {
         ofertas.add(o);
     }
 
-    public void remProducto(Producto p) {
+    public void removePr(Producto p) {
         productos.add(p);
     }
 
-    public void remCategoria(Categoria c) {
+    public void removeCa(Categoria c) {
         categorias.remove(c);
     }
 
-    public void remOferta(Oferta o) {
+    public void removeOf(Oferta o) {
         ofertas.remove(o);
     }
 

@@ -5,26 +5,38 @@
  * @see Persona
  * @author Milton Mariños
  */
-public class Empleado extends Persona {
+public class Empleado {
     private String codigo;
+    private String nombre;
+    private String apellido;
+    private String dni;
+    private String direccion;
     private String telefono;
+    private String email;
     private static int contador;
 
     private Libreria libreria;
 
     /**
-     * Constuctor de la clase empleado con todos sus atributos.
+     * Constructor con todos los atributos de la clase.
      * 
-     * @param dni
+     * @param codigo
      * @param nombre
      * @param apellido
+     * @param dni
      * @param direccion
-     * @param codigo
+     * @param telefono
+     * @param email
      */
-    public Empleado(String dni, String nombre, String apellido, String direccion, Libreria libreria) {
-        super(dni, nombre, apellido, direccion);
-        this.libreria = libreria;
-        this.codigo = generarCodigo();
+    public Empleado(String codigo, String nombre, String apellido, String dni, String direccion, String telefono,
+            String email) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.dni = dni;
+        this.direccion = direccion;
+        this.telefono = telefono;
+        this.email = email;
     }
 
     /**
@@ -39,18 +51,57 @@ public class Empleado extends Persona {
         return codigo.substring(0, 8 - String.valueOf(contador).length()) + contador;
     }
 
-    public void realizarVenta(String dni, String nombre, String apellido, String direccion, boolean comprobante,
-            String ruc, String razonSocial) {
-        
-    }
-
     // GETTERS & SETTERS
     public String getCodigo() {
         return codigo;
     }
 
-    public Libreria getLibreria() {
-        return libreria;
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public String getDni() {
+        return dni;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+    public static int getContador() {
+        return contador;
+    }
+
+    public static void setContador(int contador) {
+        Empleado.contador = contador;
     }
 
 }

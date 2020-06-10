@@ -42,24 +42,6 @@ public class Libreria {
         this.telefono = telefono;
     }
 
-    /**
-     * Metodo que registra los datos de una venta en el sistema
-     * 
-     * @param v venta a registrar en el sistema
-     */
-    public void addVenta(Venta v) {
-        ventas.add(v);
-    }
-
-    /**
-     * Metodo que elimina una venta del registro del sistema.
-     * 
-     * @param v Venta a eliminar
-     */
-    public void remVenta(Venta v) {
-        ventas.remove(v);
-    }
-
     // GETTERS & SETTERS
     public String getRuc() {
         return ruc;
@@ -93,26 +75,6 @@ public class Libreria {
         this.region = region;
     }
 
-    public String getDistrito() {
-        return distrito;
-    }
-
-    public void setDistrito(String distrito) {
-        this.distrito = distrito;
-    }
-
-    public String getTelefono() {
-        return telefono;
-    }
-
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
-    }
-
-    public Inventario getInventario() {
-        return inventario;
-    }
-
     public String getProvincia() {
         return provincia;
     }
@@ -121,14 +83,20 @@ public class Libreria {
         this.provincia = provincia;
     }
 
+    public String getDistrito() {
+        return distrito;
+    }
+
+    public void setDistrito(String distrito) {
+        this.distrito = distrito;
+    }
+
     public String getEmail() {
         return email;
     }
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    
+    } 
 
 }

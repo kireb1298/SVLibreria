@@ -16,14 +16,15 @@ public class Oferta {
     private boolean status;
     private static int contador;
 
-    public Oferta(String descripcion, double descuento, Date fechaI, Date fechaF) {
-        this.codigo = generarCodigo();
+    public Oferta(String descripcion, double descuento, Date fechaI, Date fechaF, boolean status) {
+        this.codigo = this.generarCodigo();
         this.descripcion = descripcion;
         this.descuento = descuento;
         this.fechaI = fechaI;
         this.fechaF = fechaF;
+        this.status = status;
     }
-
+    
     /**
      * Genera un codigo que sirve como identificador unico de la oferta. Esta
      * formado por las letras 'OF' + un numero cuyo valor no exede las 6 cifras.
@@ -39,5 +40,7 @@ public class Oferta {
     public String getCodigo() {
         return codigo;
     }
+
+    
 
 }

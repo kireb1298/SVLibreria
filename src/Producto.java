@@ -14,7 +14,7 @@ public class Producto {
     private int stockMin; // Stock minimo
     private double precioXU; // Precio por unidad
     private double precioXM; // Precio al por mayor
-    private double cantPrecioXM; // Cantidad minima que se requiere para acceder al precio de por mayor
+    private int cantPrecioXM; // Cantidad minima que se requiere para acceder al precio de por mayor
     private static int contador;
 
     /**
@@ -31,7 +31,7 @@ public class Producto {
      *                     por mayor
      */
     public Producto(String nombre, String descripcion, String marca, int stock, int stockMin, double precioXU,
-            double precioXM, double cantPrecioXM) {
+            double precioXM, int cantPrecioXM) {
         this.codigo = getCodigo();
         this.nombre = nombre;
         this.descripcion = descripcion;
@@ -121,10 +121,8 @@ public class Producto {
         return cantPrecioXM;
     }
 
-    public void setCantPrecioXM(double cantPrecioXM) {
+    public void setCantPrecioXM(int cantPrecioXM) {
         this.cantPrecioXM = cantPrecioXM;
     }
-
-    
 
 }

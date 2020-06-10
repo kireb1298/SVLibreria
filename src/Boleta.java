@@ -9,7 +9,7 @@ import java.util.Date;
 public class Boleta extends Comprobante {
         private String codigo;
         private String dni;
-        private int contador;
+        private static int contador;
 
         public Boleta(String dni) {
                 super();
@@ -22,5 +22,4 @@ public class Boleta extends Comprobante {
                 codigo = "CFA000000";
                 return codigo.substring(0, 8 - String.valueOf(contador).length()) + contador;
         }
-
 }

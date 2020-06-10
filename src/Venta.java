@@ -7,8 +7,10 @@ import java.util.ArrayList;
  */
 public class Venta {
     private String codigo;
+    private String fecha;
     private double subTotal;
     private double impuesto;
+    private double descuento;
     private double total;
     private static double igv;
     private static int contador;
@@ -39,4 +41,11 @@ public class Venta {
         }
         return monto;
     }
+
+    public String getCodigo() {
+        return codigo;
+    }
+
+
+    
 }
