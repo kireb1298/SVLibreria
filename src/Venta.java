@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.HashSet;
 
 /**
  * Clase que define los objetos de tipo Venta
@@ -16,7 +16,7 @@ public class Venta {
     private static int contador;
 
     Empleado empleado;
-    ArrayList<Pedido> pedidos = new ArrayList<Pedido>();
+    HashSet<Pedido> pedidos = new HashSet<Pedido>();
     Comprobante comprobante;
 
     public Venta() {

@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+
 
 /**
  * Clase que define el registro de productos, categorias y ofertas que

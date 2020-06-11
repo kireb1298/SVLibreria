@@ -1,4 +1,4 @@
-import java.util.Date;
+
 
 /**
  * Clase que define el tipo de comprobante de pago Factura

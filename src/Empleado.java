@@ -28,15 +28,16 @@ public class Empleado {
      * @param telefono
      * @param email
      */
-    public Empleado(String codigo, String nombre, String apellido, String dni, String direccion, String telefono,
-            String email) {
-        this.codigo = codigo;
+    public Empleado(String nombre, String apellido, String dni, String direccion, String telefono,
+            String email, Libreria libreria) {
+        this.codigo = this.generarCodigo();
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;
         this.direccion = direccion;
         this.telefono = telefono;
         this.email = email;
+        this.libreria = libreria;
     }
 
     /**
@@ -49,6 +50,18 @@ public class Empleado {
         contador++;
         codigo = "EM000000";
         return codigo.substring(0, 8 - String.valueOf(contador).length()) + contador;
+    }
+
+    public void registrar (Sistema s, Object o){
+        s.add(o);
+    }
+
+    public void remover (Sistema s, Object o){
+        s.remove(o);
+    }
+
+    public void buscar(Sistema s, String c){
+        s.buscar(c);
     }
 
     // GETTERS & SETTERS
@@ -104,4 +117,21 @@ public class Empleado {
         Empleado.contador = contador;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Libreria getLibreria() {
+        return libreria;
+    }
+
+    public void setLibreria(Libreria libreria) {
+        this.libreria = libreria;
+    }
+
+    
 }

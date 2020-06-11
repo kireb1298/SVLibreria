@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+
 
 /**
  * Esta clase contiene la informacion general de la libreria.
@@ -112,6 +112,21 @@ public class Libreria {
         this.telefono = telefono;
     }
 
-    
+    public RegistroEmpleado getrEmpleado() {
+        return rEmpleado;
+    }
+
+    public void setrEmpleado(RegistroEmpleado rEmpleado) {
+        this.rEmpleado = rEmpleado;
+    }
+
+    public Inventario getInventario() {
+        return inventario;
+    }
+
+    public void setInventario(Inventario inventario) {
+        this.inventario = inventario;
+    }
+
 
 }
