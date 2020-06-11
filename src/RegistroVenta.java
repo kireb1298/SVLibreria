@@ -1,18 +1,18 @@
 import java.util.HashSet;
 
-public class RegistroVenta {
+public class RegistroVenta implements Sistema {
     private HashSet<Venta> ventas = new HashSet<Venta>();
 
     public RegistroVenta() {
 
     }
 
-    public void add(Venta v) {
-        ventas.add(v);
+    public void add(Object v) {
+        ventas.add((Venta) v);
     }
 
-    public void remove(Venta v) {
-        ventas.add(v);
+    public void remove(Object v) {
+        ventas.add((Venta) v);
 
     }
 

@@ -5,24 +5,24 @@ import java.util.HashSet;
  * 
  * @author Milton Mariños
  */
-public class RegistroEmpleado {
+public class RegistroEmpleado implements Sistema {
     private HashSet<Empleado> empleados = new HashSet<Empleado>();
 
     /**
      * Constructor Vacio
      */
-    
-    public RegistroEmpleado(){
-        
+
+    public RegistroEmpleado() {
+
     }
-    
+
     /**
      * Metodo que registra un empleado del sistema.
      * 
      * @param e Empleado a registrar
      */
-    public void add(Empleado e) {
-        empleados.add(e);
+    public void add(Object e) {
+        empleados.add((Empleado) e);
     }
 
     /**
@@ -30,8 +30,8 @@ public class RegistroEmpleado {
      * 
      * @param e Empleado a eliminar
      */
-    public void remove(Empleado e) {
-        empleados.remove(e);
+    public void remove(Object e) {
+        empleados.remove((Empleado) e);
     }
 
     /**

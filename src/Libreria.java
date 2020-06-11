@@ -16,12 +16,13 @@ public class Libreria {
     private String telefono;
     private String email;
 
-    private RegistroEmpleado rEmpleados; 
+    private RegistroEmpleado rEmpleado; 
     private Inventario inventario;
-    private ArrayList<Venta> ventas = new ArrayList<Venta>();
+    private RegistroVenta rVenta;
+    private RegistroReclamo rReclamo;
 
     /**
-     * Constructor que contiene todos los atributos de la clase.
+     * Constructor que inicializa todos los atributos del objeto.
      * 
      * @param ruc
      * @param nombre
@@ -40,6 +41,10 @@ public class Libreria {
         this.provincia = provincia;
         this.distrito = distrito;
         this.telefono = telefono;
+        this.rEmpleado = new RegistroEmpleado();
+        this.inventario = new Inventario();
+        this.rVenta = new RegistroVenta();
+        this.rReclamo = new RegistroReclamo();
     }
 
     // GETTERS & SETTERS
@@ -97,6 +102,16 @@ public class Libreria {
 
     public void setEmail(String email) {
         this.email = email;
-    } 
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+    
 
 }
